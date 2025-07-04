@@ -230,11 +230,24 @@ int main() {
     }
         */
        // Use Case for Insufficient customer balance
-    Customer customer("Kerolos", 1000);
+    /*Customer customer("Kerolos", 1000);
     Cart cart;
 
     try {
-        cart.addToCart(cheese, 2);
+        cart.addToCart(cheese, 3);
+        cart.addToCart(biscuits, 1);
+        cart.addToCart(scratchCard, 1);
+        cart.addToCart(tv,1);
+        CheckoutService::checkout(customer, cart);
+    } catch (const exception& e) {
+        cerr << "Error: " << e.what() << endl;
+    }*/
+   // Use case for Insufficient Stock
+    Customer customer("Kerolos", 3000);
+    Cart cart;
+
+    try {
+        cart.addToCart(cheese, 20);
         cart.addToCart(biscuits, 1);
         cart.addToCart(scratchCard, 1);
         cart.addToCart(tv,1);
