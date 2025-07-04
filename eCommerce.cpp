@@ -229,6 +229,7 @@ int main() {
         cerr << "Error: " << e.what() << endl;
     }
         */
+       // Use Case for Insufficient customer balance
     Customer customer("Kerolos", 1000);
     Cart cart;
 
